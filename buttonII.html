@@ -5,17 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vanilla buttons</title>
+
     <style>
         #subscribe{
                 background-color: rgb(200, 0, 0);
                 color: white;
                 border: none;
-                height: 35px;
-                width: 115px;
+                padding-left: 7px;
+                padding-right: 8px;
+                padding-top: 9px;
+                padding-bottom: 9px;
                 border-radius: 3px;
                 font-weight: bold;
                 cursor: pointer;
+                vertical-align: top;
+                transition: opacity 0.15s, color 0.15s;
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
 
+        }
+        /* stretch example */
+        #subscribe:hover
+        {
+                opacity: 0.2;
+                color: rgb(13, 209, 223);
+                /* padding-left: 8px;
+                padding-right: 58px;
+                padding-top: 9px;
+                padding-bottom: 29px; */
         }
         #join{
                 background-color: white;
@@ -30,6 +46,7 @@
                 font-weight: bold;
                 margin-left: 3px;
                 margin-right: 3px;
+                vertical-align: top;
 
         }
         #tweet{
@@ -73,7 +90,7 @@
 </head>
 <body>
     <button id="subscribe">SUBSCRIBE</button>
-    <button id="join">JOIN</button>
+    <button id="join">JOIN me with  box</button>
     <button id="tweet">Twitter</button>
     <button id="cart">Add to Cart</button>
     <button id="cart1">Add to Cart</button>
